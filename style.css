@@ -1,39 +1,38 @@
-@media screen and (max-device-width: 1200px) {
-  body {
-    font-size: 5vmin;
-  }
+body {
+  font-size: x-large;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height: 8rem;
+  gap: 1em;
+  height: 8em;
   align-items: flex-end;
   margin: 0 auto;
+  min-width: fit-content;
 }
 
 .banka {
   display: flex;
   align-items: flex-end;
-  width: 5rem;
+  width: 5em;
   background-color: lightgrey;
-  border-bottom: black solid 0.1rem;
-  border-left: black solid 0.1rem;
-  border-right: black solid 0.1rem;
+  border-bottom: black solid 0.1em;
+  border-left: black solid 0.1em;
+  border-right: black solid 0.1em;
 }
 
 .banka[data-size="3"] {
-  height: 3rem;
+  height: 3em;
 }
 
 .banka[data-size="4"] {
-  height: 4rem;
+  height: 4em;
 }
 
 .banka[data-size="7"] {
-  height: 7rem;
+  height: 7em;
 }
 
 .water {
@@ -43,39 +42,39 @@
 }
 
 .water[data-value="1"] {
-  height: 1rem;
+  height: 1em;
 }
 
 .water[data-value="2"] {
-  height: 2rem;
+  height: 2em;
 }
 
 .water[data-value="3"] {
-  height: 3rem;
+  height: 3em;
 }
 
 .water[data-value="4"] {
-  height: 4rem;
+  height: 4em;
 }
 
 .water[data-value="5"] {
-  height: 5rem;
+  height: 5em;
 }
 
 .water[data-value="6"] {
-  height: 6rem;
+  height: 6em;
 }
 
 .water[data-value="7"] {
-  height: 7rem;
+  height: 7em;
 }
 
 .banka::after {
   position: absolute;
   content: attr(data-size);
   text-align: center;
-  width: 5rem;
-  top: 10rem;
+  width: 5em;
+  top: 10em;
   font-weight: bold;
 }
 
@@ -83,22 +82,22 @@
   position: absolute;
   content: attr(data-value);
   text-align: center;
-  width: 5rem;
-  top: 6rem;
+  width: 5em;
+  top: 6em;
   color: dodgerblue;
   font-weight: bolder;
 }
 
 .banka:has(.water.from),
 .banka:active {
-  box-shadow: 0 0.2rem 1rem darkslateblue;
+  box-shadow: 0 0.2em 1em dodgerblue;
   transition: all 0.1s ease-in;
 }
 
 
 @media(hover: hover) {
   .banka:hover {
-    box-shadow: 0 0.2rem 1rem darkslateblue;
+    box-shadow: 0 0.2em 1em blue;
     transition: all 0.4s ease-in;
   }
 }
