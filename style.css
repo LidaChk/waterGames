@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 1vw;
+  font-size: 3vw;
 
 }
 
@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 30vw;
+  width: 80vw;
   height: 8rem;
   align-items: flex-end;
   margin: auto;
@@ -21,7 +21,7 @@ body {
 .banka {
   display: flex;
   align-items: flex-end;
-  width: 5vw;
+  width: 5rem;
   background-color: lightgrey;
   border-bottom: black solid 0.1rem;
   border-left: black solid 0.1rem;
@@ -78,7 +78,7 @@ body {
   position: absolute;
   content: attr(data-size);
   text-align: center;
-  width: 5vw;
+  width: 5rem;
   top: 10rem;
   font-weight: bold;
 }
@@ -87,7 +87,7 @@ body {
   position: absolute;
   content: attr(data-value);
   text-align: center;
-  width: 5vw;
+  width: 5rem;
   top: 6rem;
   color: dodgerblue;
   font-weight: bolder;
