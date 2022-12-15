@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30vw;
+  height: 8rem;
+  align-items: flex-end;
+  margin: auto;
+}
+
+.banka {
+  display: flex;
+  align-items: flex-end;
+  width: 5vw;
+  background-color: lightgrey;
+  border-bottom: black solid 0.1rem;
+  border-left: black solid 0.1rem;
+  border-right: black solid 0.1rem;
+}
+
+.banka[data-size="3"] {
+  height: 3rem;
+}
+
+.banka[data-size="4"] {
+  height: 4rem;
+}
+
+.banka[data-size="7"] {
+  height: 7rem;
+}
+
+.water {
+  background-color: aqua;
+  width: 100%;
+  transition: all 1s;
+}
+
+.water[data-value="1"] {
+  height: 1rem;
+}
+
+.water[data-value="2"] {
+  height: 2rem;
+}
+
+.water[data-value="3"] {
+  height: 3rem;
+}
+
+.water[data-value="4"] {
+  height: 4rem;
+}
+
+.water[data-value="5"] {
+  height: 5rem;
+}
+
+.water[data-value="6"] {
+  height: 6rem;
+}
+
+.water[data-value="7"] {
+  height: 7rem;
+}
+
+.banka::after {
+  position: absolute;
+  content: attr(data-size);
+  text-align: center;
+  width: 5vw;
+  top: 10rem;
+  font-weight: bold;
+}
+
+.water::after {
+  position: absolute;
+  content: attr(data-value);
+  text-align: center;
+  width: 5vw;
+  top: 6rem;
+  color: dodgerblue;
+  font-weight: bolder;
+}
+
+.banka:has(.water.from),
+.banka:hover {
+  box-shadow: 0 0.2rem 1rem darkslateblue;
+}
