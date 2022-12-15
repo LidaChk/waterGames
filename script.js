@@ -1,5 +1,9 @@
 document.querySelector(".container").addEventListener("click", (e) => {
   const t = e.target;
+  if (t.closest(".banka").querySelector(".from")) {
+    t.closest(".banka").querySelector(".from").classList.toggle("from");
+    return true;
+  }
   const from = t.closest(".container").querySelector(".from");
   const to = t.closest(".banka").querySelector(".water");
   console.log("-----------------------------");
@@ -23,4 +27,5 @@ document.querySelector(".container").addEventListener("click", (e) => {
 
   console.log(t.closest(".water"));
   console.log(t.closest(".banka"));
+  return true;
 });
