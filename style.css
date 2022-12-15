@@ -1,15 +1,14 @@
-body {
-  font-size: 5vmin;
-
+@media screen and (max-device-width: 1200px) {
+  body {
+    font-size: 5vmin;
+  }
 }
-
-
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 90vw;
+  justify-content: center;
+  width: 100%;
   height: 8rem;
   align-items: flex-end;
   margin: 0 auto;
@@ -40,7 +39,7 @@ body {
 .water {
   background-color: aqua;
   width: 100%;
-  transition: all 1s;
+  transition: all 1s ease-in;
 }
 
 .water[data-value="1"] {
@@ -91,6 +90,15 @@ body {
 }
 
 .banka:has(.water.from),
-.banka:hover {
+.banka:active {
   box-shadow: 0 0.2rem 1rem darkslateblue;
+  transition: all 0.1s ease-in;
+}
+
+
+@media(hover: hover) {
+  .banka:hover {
+    box-shadow: 0 0.2rem 1rem darkslateblue;
+    transition: all 0.4s ease-in;
+  }
 }
