@@ -90,8 +90,20 @@ body {
 
 .banka:has(.water.from),
 .banka:active {
-  box-shadow: 0 0.2em 1em dodgerblue;
+  box-shadow: 0 0.2em 1em rgb(30, 144, 255);
   transition: all 0.1s ease-in;
+}
+
+.water.from::after {
+  text-shadow: 0 0 0.2em rgba(30,
+      144,
+      255, 0.7), 0 0 0.2em rgba(30,
+      144,
+      255,
+      0.7), 0 0 0.2em rgba(30,
+      144,
+      255, 0.7);
+  color: white;
 }
 
 
